@@ -1,0 +1,33 @@
+body {
+    /* background-color: #ffA500; */
+    background-color: blueviolet;
+}
+
+button {
+    padding: 0;
+    margin: 0;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    place-self: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 400px;
+    /* height: 550px; */
+    padding: 12px;
+    background-color: black;
+    margin: 60px auto 0;
+}
+
+.display {
+    grid-column: span 4;
+}
+
+.digit[value="0"] {
+    grid-column: span 2;
+    width: 180px;
+    border-radius: 20px;
+}
