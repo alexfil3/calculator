@@ -6,36 +6,34 @@
     <meta name="author" content="Alex Filimonov">
     <meta name="description" content="The legendary calculator project">
     <link rel="shortcut icon" href="calc.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Calculator</title>
 </head>
 <body>
-    <!-- 
-    Create a basic HTML calculator with buttons for each digit, each of the above functions and an “Equals” key.
-Do not worry about wiring up the JS just yet.
-There should also be a display for the calculator. Go ahead and fill it with some dummy numbers so it looks correct.
-Add a “clear” button. -->
     <div class="container">
-        <div class="display"></div>
-        <button type="button">AC</button>
-        <button type="button">+/-</button>
-        <button type="button">%</button>
-        <button type="button">/</button>
-        <button class="digit" type="button">7</button>
-        <button class="digit" type="button">8</button>
-        <button class="digit" type="button">9</button>
-        <button class="digit" type="button">X</button>
-        <button class="digit" type="button">4</button>
-        <button type="button">5</button>
-        <button type="button">6</button>
-        <button type="button">-</button>
-        <button type="button">1</button>
-        <button type="button">2</button>
-        <button type="button">3</button>
-        <button type="button">+</button>
-        <button class="digit" type="button" value="0">0</button>
-        <button type="button">.</button>
-        <button type="button">=</button>
+        <div class="display">0</div>
+        <button class="func-1" value="AC" type="button">AC</button>
+        <button class="func-1" value="+/-" type="button">+/-</button>
+        <button class="func-1" value="%" type="button">%</button>
+        <button class="func-2" type="button">/</button>
+        <button class="digit" value="7" type="button">7</button>
+        <button class="digit" value="8" type="button">8</button>
+        <button class="digit" value="9" type="button">9</button>
+        <button class="func-2" type="button">X</button>
+        <button class="digit" value="4" type="button">4</button>
+        <button class="digit" value="5" type="button">5</button>
+        <button class="digit" value="6" type="button">6</button>
+        <button class="func-2" type="button">-</button>
+        <button class="digit" value="1" type="button">1</button>
+        <button class="digit" value="2" type="button">2</button>
+        <button class="digit" value="3" type="button">3</button>
+        <button class="func-2" type="button">+</button>
+        <button class="digit" value="0" type="button">0</button>
+        <button class="point" value="." type="button">.</button>
+        <button class="func-2" value="=" type="button">=</button>
     </div>
     <script src="./index.js"></script>
 </body>
